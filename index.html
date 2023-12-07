@@ -1,0 +1,334 @@
+<html>
+	<head>
+		<meta charset="UTF=8">
+		<title>Component library</title>
+
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/variables.css">
+		<link rel="stylesheet" href="./css/fonts.css">
+		<link rel="stylesheet" href="./css/style.css">
+         
+		<link rel="stylesheet" href="./css/components/colapse-and-expand.css">
+		<link rel="stylesheet" href="./css/components/accordion.css">
+		<link rel="stylesheet" href="./css/components/button.css">
+		<link rel="stylesheet" href="./css/components/input-checkbox.css">
+		<link rel="stylesheet" href="./css/components/input-radio.css">
+		<link rel="stylesheet" href="./css/components/toast.css">
+		<link rel="stylesheet" href="./css/components/toggle-switch.css">
+		<link rel="stylesheet" href="./css/components/tabs.css">
+		<link rel="stylesheet" href="./css/components/numric-stepper.css">
+		<link rel="stylesheet" href="./css/components/loader.css">
+		<link rel="stylesheet" href="./css/components/tooltip.css">
+		<link rel="stylesheet" href="./css/components/card.css">
+	</head>
+
+	<body>
+
+		<header>Components</header>
+		<div class="container">
+		<aside class="overview">
+			<ul>
+				<li>
+					<button data-component-to-show="accordion" class="overview__button overview__button--active">
+						Accordion
+					</button>
+				</li>
+				
+				<li>
+					<button data-component-to-show="colapse-and-expand" class="overview__button">
+						Close and expand
+					</button>
+				</li>
+
+				<li>
+					<button data-component-to-show="button" class="overview__button">
+						Button
+					</button>
+				</li>
+				
+				<li>
+					<button data-component-to-show="checkbox" class="overview__button">
+						Checkbox
+					</button>
+				</li>
+				
+				<li>
+					<button data-component-to-show="radio" class="overview__button">
+						Radio
+					</button>
+				</li>
+
+			      <li>
+					<button data-component-to-show="toggle-switch" class="overview__button">
+						Toggle switch
+					</button>
+				</li>
+
+				<li>
+					<button data-component-to-show="numric-stepper" class="overview__button">
+						Numric stepper
+					</button>
+				</li>
+
+				<li>
+					<button data-component-to-show="loader" class="overview__button">
+						Loader
+					</button>
+				</li>
+
+				<li>
+					<button data-component-to-show="tooltip" class="overview__button">
+						Tooltip
+					</button>
+				</li>
+				<li>
+					<button data-component-to-show="card" class="overview__button">
+					 Card
+					</button>
+				</li>
+			</ul>
+		</aside>
+
+		<main>
+			<div class="component component--visible" data-component-name="accordion">
+				<div class="component-state">
+					<div class="component-state__name">
+						Normal
+					</div>
+
+					<div class="component-state__variant">
+						<div class="accordion accordion--hover">
+							<button class="accordion__toggle">Accordion</button>
+							<div class="accordion__content">
+						   <div>Link 1</div>
+							<div>Link 2</div>
+							<div>Link 3</div>
+                           </div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="component-state">
+					<div class="component-state__name">
+						Expanded	
+					</div>
+                     
+					<div class="component-state__variant">
+						<div class="accordion accordion--expanded">
+							<button class="accordion__toggle">Accordion</button>
+							<div class="accordion__content">
+								<div>Link 1</div>
+								<div>Link 2</div>
+								<div>Link 3</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="component" data-component-name="button">
+				<div class="component-state">
+					<div class="component-state__name">
+						Normal
+					</div>
+
+					<div class="component-state__variant">
+						<button class="button">Button</button>
+					</div>
+				</div>
+
+				<div class="component-state">
+					<div class="component-state__name">
+						Hover
+					</div>
+                  
+					<div class="component-state__variant">
+						<button class="button button--hover">Button</button>
+					</div>
+				</div>
+				
+				<div class="component-state">
+					<div class="component-state__name">
+						Active	
+					</div>
+
+					<div class="component-state__variant">
+						<button class="button button--active">Button</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="component" data-component-name="card">
+				
+				<div class = "component__name">Image card</div>
+				<div class="image-card">
+                <img src="assets/images/Oslo.jpeg" name>
+			   <li class=" image-card__title"> Visit Oslo</li>
+			   <button class=" image-card__link-informatin">More informatin</button>
+			  </div>
+            
+
+			  </div>
+
+			  <div class="component" data-component-name="radio">
+				<div class="component-state">
+					<div class="component-state__name">Normal</div>
+					<div class="component-state__variant">
+					<div class="input-radio">
+					<label class="input-radio__label">
+					<input class="input-radio__input"  hidden type="radio" name="yes-or-no" value="yes">
+					<span class="input-radio__text">Yes</span>
+					</label>
+
+					<label class="input-radio__label">
+						<input class="input-radio__input" hidden type="radio" name="yes-or-no" value="no">
+						<span class="input-radio__text">No</span>
+						</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="component-state">
+					<div class="component-state__name">Checked</div>
+					<div class="component-state__variant">
+					<div class="input-radio">
+					<label class="input-radio__label">
+					<input class="input-radio__input"  checked hidden type="radio" name="yes-or-no-2" value="yes">
+				    <span class="input-radio__text">Yes</span>
+					</label>
+
+				<label class="input-radio__label">
+					<input class="input-radio__input" checked hidden type="radio" name="yes-or-no-2" value="no">
+					<span class="input-radio__text">No</span>
+					</label>
+					</div>
+					</div>
+				</div>
+			    </div>
+		
+			<div class="component" data-component-name="checkbox">
+				<div class="component-state">
+				<div class="component-state__name">Normal</div>
+				<div class="component-state__variant">
+				<div class="input-checkbox">
+
+				<label class="input-checkbox__label">
+					<input class="input-checkbox__input" type="checkbox" name="option-1">
+					<span class="input-checkbox__text">Option 1</span>
+					</label>
+
+				<label class="input-checkbox__label">
+					<input class="input-checkbox__input"  type="checkbox" name="option-2">
+					<span class="input-checkbox__text">Option 2</span>
+					</label>
+
+				<label class="input-checkbox__label">
+					<input class="input-checkbox__input"  type="checkbox" name="option-3">
+					<span class="input-checkbox__text">Option 3</span>
+								
+								
+				</label>
+				</div>
+				</div>
+				</div>
+
+				<div class="component-state">
+					<div class="component-state__name">Checked</div>
+					<div class="component-state__variant">
+					<div class="input-checkbox">
+
+					<label class="input-checkbox__label">
+                    <input class="input-checkbox__input-checked"  type="checkbox" name="option-1">
+					<span class="input-checkbox__text">Option 1</span>
+					</label>
+
+					<label class="input-checkbox__label">
+						<input class="input-checkbox__input-checked"  type="checkbox" name="option-2">
+						<span class="input-checkbox__text">Option 2</span>
+						</label>
+
+					<label class="input-checkbox__label">
+						<input class="input-checkbox__input-checked"  type="checkbox" name="option-3">
+						<span class="input-checkbox__text">Option 3</span>
+							
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+				
+                       
+		<div class="component" data-component-name="numric-stepper">
+			
+       <div class = "numric-stepper">
+        <span class ="numric-stepper__minus"> - </span>
+		<span class ="numric-stepper__text"> 0 </span>
+		<span class ="numric-stepper__plus"> + </span>
+      </div>
+	   </div>
+
+	   <div class="component" data-component-name="colapse-and-expand">
+		   <div class = "component__name">Colapsed:</div>
+		  
+		   <dialog>
+		      <button class="component__expand"> 
+			  <p class = "component__colapse-button">X</p>
+		      </button>
+		   </dialog>
+		 
+		   <button class="component__colapse">
+			<p class="expand-button"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="9" viewBox="0 0 10 9" fill="none">
+			  <path d="M0.505588 7.96291C0.484719 8.24063 0.689103 8.48239 0.962094 8.50291L5.41073 8.83721C5.68372 8.85772 5.92194 8.64921 5.94281 8.37149C5.96368 8.09377 5.7593 7.852 5.48631 7.83149L1.53196 7.53434L1.83426 3.51147C1.85513 3.23375 1.65075 2.99198 1.37776 2.97146C1.10477 2.95095 0.866548 3.15946 0.845679 3.43718L0.505588 7.96291ZM4.09517 4.62646L0.677084 7.61821L1.32268 8.38189L4.74077 5.39014L4.09517 4.62646Z" fill="black"/>
+			  <path d="M9.43637 0.814372C9.45148 0.536263 9.24216 0.298764 8.96882 0.283904L4.51447 0.0417371C4.24113 0.0268765 4.00729 0.240282 3.99217 0.518391C3.97705 0.7965 4.18638 1.034 4.45972 1.04886L8.41913 1.26412L8.20012 5.29261C8.185 5.57072 8.39433 5.80822 8.66767 5.82308C8.94101 5.83794 9.17485 5.62454 9.18997 5.34643L9.43637 0.814372ZM5.91557 4.22568L9.27205 1.16256L8.61083 0.412367L5.25435 3.47549L5.91557 4.22568Z" fill="black"/>
+			</svg></p></button>
+		   
+			  
+		   <div class = "component__name">Expanded:</div>
+         <button class="component__expand-box"> 
+			<p>X</p>
+			</button>
+		 </div>
+	 
+	 <div class="component" data-component-name="toggle-switch">
+	<div class="toggle">
+   <span class="component__name">Normal:</span>
+	 <label class="switch"> 
+		 <input type="checkbox">
+	   <span class="slider"></span>
+   </label>
+   
+   <span class="component__name">Active:</span>
+   <label class="switch">
+	<input type="checkbox" checked>
+		<span class="slider"></span> 
+	  </label>
+	</div>
+</div>
+	  
+
+<div class="component" data-component-name="loader">
+	   <div class="loader"></div>
+      </div>
+
+   <div class="component" data-component-name="tooltip">
+      <div class="tooltip__warning-header">Warning: 
+      <div class="tooltip__warning-symbol"> ! 
+	  <div class=" tooltip__warning-box">Enter a valid number.</div>
+	<div class="errow"> <svg xmlns="http://www.w3.org/2000/svg" width="13" height="19" viewBox="0 0 13 19" fill="none">
+		<path d="M0.0229677 9.72355L12.5577 0.335728L12.9813 18.5173L0.0229677 9.72355Z" fill="#3F3939"/>
+	  </svg>
+
+	 </div>
+     </div>
+	</div>
+	
+	
+	</main>
+	
+	
+
+		 <script src="./js/script.js"></script>
+	</body>
+</html>

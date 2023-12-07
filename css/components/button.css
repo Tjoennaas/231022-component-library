@@ -1,0 +1,23 @@
+.button {
+	font-size: var(--font-size-xsmall) ;
+	padding: var(--spacing-small);
+	border-radius: var(--border-radius);
+	background-color: var( --color-tertiary);
+	width: var(--spacing-large);
+	height: var(--spacing-large);
+	
+
+}
+
+.button:hover,
+.button--hover {
+	background-color: var(--color-accent-6);
+}
+
+.button:active,
+.button--active {
+	color: var( --color-accent-5);
+	background-color:rgb(61, 163, 93);
+	width: var(--spacing-xlarge);
+	height: var(--spacing-xlarge);
+}

@@ -1,0 +1,78 @@
+html {
+	font-size: var(--font-size-base);
+	
+}
+
+body {
+	font-family: 'Inter', 'Arial', sans-serif;
+}
+
+header{ 
+	background-color:var(--color-secondary);
+	height: var(--spacing-xlarge);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center; 
+	border-radius: var(--border-radius);
+  }
+
+  .container{
+	margin-top: var(--spacing-large);
+	font-size: var(--font-size-smal);
+    display: flex;
+	flex-flow: nowrap;
+	gap: var(--spacing-large);
+}
+
+.overview{ 
+	margin: var(--spacing-medium);
+   	
+}
+
+.overview__button {
+	color: var(--color-tertiary);
+}
+
+.overview__button:hover,
+.overview__button--active {
+	color: var(--color-primary);
+}
+
+.component {
+	display: none;
+	flex-flow: column nowrap;
+	gap: var(--spacing-small);
+
+}
+
+.component--visible {
+	display: flex;
+}
+
+.component-state {
+	display: flex;
+	width: 100%;
+	flex-flow: column nowrap;
+	
+	margin-top: var(--spacing-medium);
+	margin-left: var(--spacing-xlarge);
+}
+
+.component-state__name {
+	color: var(--color-tertiary);
+	
+}
+
+.component__name{ 
+	color: var(--color-tertiary);
+	
+}
+
+.component-triggers__button {
+	border-radius: var(--border-radius);
+	color: var(--color-tertiary);
+	border: 2px solid var(--color-tertiary);
+	padding: var(--spacing-small);
+}
+

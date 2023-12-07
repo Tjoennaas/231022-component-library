@@ -1,0 +1,48 @@
+
+
+.accordion {
+	border-radius: 2px;
+	border:2px solid var(--color-primary);
+	 overflow: hidden;
+	width: var(--measurement-medium);
+}
+
+
+.accordion__toggle {
+	width: 100%;
+	text-align: left;
+	padding: var(--spacing-small);
+	
+}
+
+.accordion__toggle:before {
+	content:"";
+	display: inline-block;
+	width: var(--spacing-medium);
+	height: var(--spacing-xsmall);
+	background: url('../../assets/images/arrow.png') no-repeat bottom;
+	background-size: contain ;
+	margin-right:var( --spacing-xsmall);
+}
+
+.accordion__content {
+	display: none;
+	padding: var(--spacing-small);
+}
+
+
+.accordion__toggle:hover{
+	background: var(--color-accent-7);
+}
+
+.accordion--expanded .accordion__content {
+	display: block;
+}
+
+.accordion--expanded .accordion__toggle {
+	border-bottom: var(--spacing-xxsmall) solid var(--color-tertiary);
+}
+
+.accordion--expanded .accordion__toggle:before {
+	transform: rotate(180deg)
+}

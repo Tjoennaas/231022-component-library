@@ -1,0 +1,40 @@
+:root {
+	--font-size-base: 30px;
+	--font-size-small: 0.8rem;
+	--font-size-xsmall: 0.3rem;
+
+
+	--color-primary: black;
+	--color-secondary: #FEFFCB;
+	--color-tertiary: rgb(202, 199, 199);
+
+	--color-accent-1: #C6CCFF;
+	--color-accent-2: #EDDA98;
+	--color-accent-3:  white;
+	--color-accent-4:  #2196F3;
+    --color-accent-5:  blue;
+	--color-accent-6:  rgb(120, 227, 122);
+	--color-accent-7:  rgb(8, 193, 180);
+	--color-accent-8:  #3F3939;
+
+	--border-radius: 5px;
+	--border-radius-large: 34px;
+    
+	--spacing-xxsmall: 0.0625rem;
+	--spacing-xsmall: 0.25rem;
+    --spacing-small: 0.625rem;
+	--spacing-medium: 1.1rem;
+	--spacing-large: 2rem;
+	--spacing-xlarge: 3.5rem;
+	--spacing-xxxxlarge: 5rem;
+	--spacing-xxxxxlarge: 11rem;
+    --spacing-xxlarge: 8rem;
+	--spacing-xxxlarge:14rem;
+
+	--width-spacing-large:5rem;
+	--spacing-xxxxlarge: ;
+
+	--measurement-smal:8rem;
+	--measurement-medium:14rem;
+	--measurement-large:18rem;
+}

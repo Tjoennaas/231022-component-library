@@ -1,0 +1,48 @@
+
+
+
+::backdrop {
+ background-color: black;
+
+}
+
+  dialog{
+    margin-left: var(--spacing-xxlarge);
+    margin-top: var(--spacing-xxlarge);
+    width: var(--measurement-large);
+    height: var(--measurement-medium);
+    border: 0.1rem solid var(--color-primary);
+  } 
+ 
+  .component__colapse-button{ 
+    margin-left: var(--spacing-small);
+    cursor: pointer;   
+}
+
+.expand-button{
+  position: absolute;
+  top: var(--spacing-xsmall);
+  left:var(--spacing-xsmall);
+}
+  .component__colapse{ 
+    position: relative;
+    width: var(--measurement-smal);
+    height: var(--measurement-smal);
+    border: 0.1rem solid var(--color-primary);
+   
+  }
+
+.component__expand-box{
+  position:relative;
+  width:var(--measurement-large);
+  height:var(--measurement-medium);
+  border:  0.1rem solid var(--color-primary);
+}
+
+p{
+  position: absolute;
+  top: var(--spacing-xxsmall);
+  right: 17rem;
+
+}
+

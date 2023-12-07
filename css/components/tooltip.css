@@ -1,0 +1,61 @@
+
+
+.tooltip__warning-header{
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-small);
+  padding-top: var(--spacing-large);  
+  margin-left: var(--spacing-large);  
+}
+
+
+.tooltip__warning-symbol {  
+ position: relative;
+ cursor: pointer;
+ border-radius:var(--border-radius-large);
+ width: 1.5rem;
+ height: 1.5rem;
+
+
+ padding-left: 0.6rem;
+ padding-top: 0.2rem;
+ background-color: var(--color-accent-2);
+}  
+
+.tooltip__warning-box { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   position: absolute;
+  left: 2.1rem;
+   top: var(--spacing-xsmall);
+  visibility: hidden; 
+  font-size: small;
+  cursor: pointer;
+  border-radius: 0.2125rem;
+  border: 0.1rem solid var(--color-accent-8);
+  background-color: var(--color-accent-2);
+   width: var(--spacing-xxlarge);
+  height: var(--spacing-large);
+}
+
+.errow{ 
+  visibility: visible;
+  position: relative;
+  left:var(--spacing-medium);
+  bottom:var(--spacing-small);
+}
+    
+
+
+.tooltip__warning-symbol:hover  .tooltip__warning-box {
+  visibility: visible;
+}
+
+
+.tooltip__warning-symbol:hover  .errow {
+  visibility: hidden;
+}
+ 
+
+

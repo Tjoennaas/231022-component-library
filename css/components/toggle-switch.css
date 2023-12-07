@@ -1,0 +1,54 @@
+
+ .toggle{
+	margin-top: var(--spacing-xlarge);
+	display: flex;
+	flex-direction: row;
+	gap: var( --spacing-small);
+}
+
+ 
+.component__name{ 
+	margin-left:  var( --spacing-large);
+}
+  .switch {
+	position: relative;
+	display: inline-block;
+	width: var( --spacing-large);
+	height: var( --spacing-medium);
+  }
+
+  
+  .slider {
+	border-radius: var(--border-radius-large);
+	position: absolute;
+	cursor: pointer;
+	top:  0;
+	left: 0 ;
+	right:0 ;
+	bottom: 0;
+	background-color: var(--color-tertiary);
+	
+  }
+  
+  .slider:before {
+	border-radius: var(--border-radius-large);
+	position: absolute;
+	content: "";
+	height: 1rem;
+	width: 1rem;
+	left: 0.05rem;
+	bottom: 0.05rem;
+	background-color:  var( --color-accent-3);
+   x
+	
+  }
+  
+  input:checked + .slider {
+	background-color: var( --color-accent-4);
+  }
+  
+
+  
+  input:checked + .slider:before {
+	transform: translateX(26px);
+  }
